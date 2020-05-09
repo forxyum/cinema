@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="cinema-web:war">
+    <output-path>$PROJECT_DIR$/cinema-web/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>cinema-web</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="cinema-web.war">
+      <element id="artifact" artifact-name="cinema-web:war exploded" />
+    </root>
+  </artifact>
+</component>

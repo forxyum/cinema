@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hu.alkfejl.view.controller.MovieListController">
+   <children>
+      <TableView id="movieTable" fx:id="movieTable" layoutX="10.0" layoutY="4.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <columns>
+            <TableColumn fx:id="titleCol" editable="false" prefWidth="${movieTable.width/8}" text="Title" />
+            <TableColumn fx:id="lengthCol" prefWidth="${movieTable.width/8}" text="Length" />
+            <TableColumn fx:id="ratingCol" prefWidth="${movieTable.width/8}" text="Rating" />
+            <TableColumn fx:id="directorCol" prefWidth="${movieTable.width/8}" text="Director" />
+            <TableColumn fx:id="descriptionCol" prefWidth="181.0" text="Description" />
+            <TableColumn fx:id="idCol" visible="false" />
+            <TableColumn fx:id="actionsCol" prefWidth="105" text="Actions" />
+         </columns>
+      </TableView>
+   </children>
+</AnchorPane>
