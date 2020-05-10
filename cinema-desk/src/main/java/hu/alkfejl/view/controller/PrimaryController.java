@@ -41,6 +41,7 @@ public class PrimaryController implements Initializable {
             stage.setScene(new Scene(pane));
             stage.initModality(Modality.APPLICATION_MODAL);
             stage.setResizable(false);
+            stage.setOnHidden(event -> display(which));
             stage.showAndWait();
         } catch (IOException e) {
             e.printStackTrace();
@@ -70,6 +71,14 @@ public class PrimaryController implements Initializable {
     @FXML
     public void displayReservations(){
         this.display("reservation");
+    }
+    @FXML
+    public void addScreening(){
+        this.add("screaning","Add a new screaning");
+    }
+    @FXML
+    public void displayScreenings(){
+        this.display("screaning");
     }
 
 

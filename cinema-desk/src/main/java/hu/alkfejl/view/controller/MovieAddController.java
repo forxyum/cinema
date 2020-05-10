@@ -58,7 +58,6 @@ public class MovieAddController implements Initializable {
     public void initialize(URL location, ResourceBundle resources) {
         ratingChoice.getItems().removeAll(ratingChoice.getItems());
         ratingChoice.getItems().addAll("U", "PG", "12A", "15", "18", "R18");
-        ratingChoice.getSelectionModel().select("U");
 
         titleField.textProperty().bindBidirectional(m.titleProperty());
         lengthField.textProperty().bindBidirectional(m.lengthProperty().asObject(),new IntegerStringConverter());
@@ -66,6 +65,8 @@ public class MovieAddController implements Initializable {
         descriptionArea.textProperty().bindBidirectional(m.descriptionProperty());
         ratingChoice.valueProperty().bindBidirectional(m.ratingProperty());
         coverString.bindBidirectional(m.coverProperty());
+
+        ratingChoice.getSelectionModel().select("U");
     }
     public void initMovie(Movie m){
         m.copyTo(this.m);
@@ -126,8 +127,9 @@ public class MovieAddController implements Initializable {
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
+            Integer lastId = CinemaController.getInstance().lastMovieId();
             for (String actor : actorsArray) {
-                res =  CinemaController.getInstance().addActor(new Actor(CinemaController.getInstance().lastMovieId(), actor));
+                res =  CinemaController.getInstance().addActor(new Actor(lastId, actor));
             }
         }
         else{

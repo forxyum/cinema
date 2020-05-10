@@ -67,6 +67,7 @@ public class Room {
     public void setColumns(int columns) {
         this.columns.set(columns);
     }
+
 }
 
 

@@ -12,24 +12,30 @@
    <top>
       <MenuBar BorderPane.alignment="CENTER">
         <menus>
-          <Menu id="movieMenu" mnemonicParsing="false" text="Movie">
+          <Menu mnemonicParsing="false" text="Movie">
             <items>
               <MenuItem id="movieAddItem" fx:id="movieAddButton" mnemonicParsing="false" onAction="#addMovie" text="Add" />
                   <MenuItem id="movieListItem" fx:id="movieListButton" mnemonicParsing="false" onAction="#displayMovies" text="List" />
             </items>
           </Menu>
-          <Menu id="roomMenu" mnemonicParsing="false" text="Room">
+          <Menu mnemonicParsing="false" text="Room">
             <items>
               <MenuItem id="roomAddItem" mnemonicParsing="false" text="Add" onAction="#addRoom"/>
                   <MenuItem id="roomListItem" mnemonicParsing="false" text="List" onAction="#displayRooms"/>
             </items>
           </Menu>
-          <Menu id="harom" mnemonicParsing="false" text="Reservation">
+          <Menu mnemonicParsing="false" text="Reservation">
             <items>
               <MenuItem id="reservationAddItem" mnemonicParsing="false" text="Add" onAction="#addReservation" />
                   <MenuItem id="reservationListItem" mnemonicParsing="false" text="List" onAction="#displayReservations"/>
             </items>
           </Menu>
+            <Menu mnemonicParsing="false" text="Reservation">
+                <items>
+                    <MenuItem id="screeningAddItem" mnemonicParsing="false" text="Add" onAction="#addScreening" />
+                    <MenuItem id="screeningListItem" mnemonicParsing="false" text="List" onAction="#displayScreenings"/>
+                </items>
+            </Menu>
         </menus>
       </MenuBar>
    </top>

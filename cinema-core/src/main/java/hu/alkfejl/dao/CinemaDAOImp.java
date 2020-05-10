@@ -47,6 +47,7 @@ public class CinemaDAOImp implements CinemaDAO {
             "username text primary key," +
             "password text not null" +
             ");";
+    private static final String FOREIGN_KEYS_ON = "PRAGMA foreign_keys = ON;";
     private static final String INSERT_MOVIE = "INSERT INTO Movie VALUES(null,?,?,?,?,?,?);";
     private static final String DELETE_MOVIE = "DELETE FROM Movie where id = ?;";
     private static final String UPDATE_MOVIE = "UPDATE Movie SET title=?,length=?,rating=?,director=?,description=?,cover=? where id =?;";
@@ -65,6 +66,7 @@ public class CinemaDAOImp implements CinemaDAO {
     private static final String SELECT_ALL_RESERVATIONS = "SELECT * FROM Reservation;";
     private static final String INSERT_ACTOR = "INSERT INTO Actor VALUES(?,?);";
     private static final String LAST_MOVIE_ID = "SELECT seq FROM sqlite_sequence WHERE name=\"Movie\";";
+    private static final String LAST_RESERVATION_ID = "SELECT seq FROM sqlite_sequence WHERE name=\"Reservation\";";
     private static final String SELECT_ACTORS_BY_MOVIE_ID = "SELECT name FROM Actor WHERE movieId=?;";
     private static final String DELETE_ACTOR = "DELETE FROM Actor WHERE movieId=? AND name=?;";
     private static final String MOVIE_TITLE_BY_RES_ID = "SELECT title FROM Movie,Reservation,Screening WHERE Screening.id=screeningId AND Movie.id=movieId AND Reservation.id=?;";
@@ -74,6 +76,10 @@ public class CinemaDAOImp implements CinemaDAO {
     private static final String SCREENING_BY_MOVIE_ID = "SELECT * FROM Screening WHERE movieId=?;";
     private static final String SEATS_BY_SCREENING_ID = "SELECT number FROM Seat,Reservation,Screening WHERE screeningId=Screening.id AND Reservation.id=resId AND screeningId=?;";
     private static final String DIMENSIONS_BY_SCREENING_ID = "SELECT rows, columns FROM Room, Screening WHERE Screening.room=Room.id AND Screening.id =?;";
+    private static final String SELECT_ALL_USERNAMES = "SELECT username FROM User;";
+    private static final String INSERT_SEAT = "INSERT INTO Seat VALUES(?,?);";
+    private static final String DELETE_SEAT = "DELETE FROM Seat WHERE resId=? AND number=?;";
+    private static final String MOVIE_TITLE_BY_SCREENING_ID = "SELECT title FROM Movie,Screening WHERE";
 
     public CinemaDAOImp() {
         try {
@@ -86,6 +92,7 @@ public class CinemaDAOImp implements CinemaDAO {
 
     public void initTables() {
         try (Connection conn = DriverManager.getConnection(CONN_STR); Statement st = conn.createStatement()) {
+            st.executeUpdate(FOREIGN_KEYS_ON);
             st.executeUpdate(CREATE_MOVIE);
             st.executeUpdate(CREATE_ROOM);
             st.executeUpdate(CREATE_ACTOR);
@@ -101,6 +108,7 @@ public class CinemaDAOImp implements CinemaDAO {
     @Override
     public boolean addMovie(Movie m) {
         try (Connection conn = DriverManager.getConnection(CONN_STR); PreparedStatement ps = conn.prepareStatement(INSERT_MOVIE)) {
+            conn.createStatement().executeUpdate(FOREIGN_KEYS_ON);
             ps.setString(1, m.getTitle());
             ps.setInt(2, m.getLength());
             ps.setString(3, m.getRating());
@@ -120,6 +128,7 @@ public class CinemaDAOImp implements CinemaDAO {
     @Override
     public boolean deleteMovie(Movie m) {
         try (Connection conn = DriverManager.getConnection(CONN_STR); PreparedStatement ps = conn.prepareStatement(DELETE_MOVIE)) {
+            conn.createStatement().executeUpdate(FOREIGN_KEYS_ON);
             ps.setInt(1, m.getId());
             int res = ps.executeUpdate();
             if (res == 1) {
@@ -134,6 +143,7 @@ public class CinemaDAOImp implements CinemaDAO {
     @Override
     public boolean updateMovie(int id, Movie m) {
         try (Connection conn = DriverManager.getConnection(CONN_STR); PreparedStatement ps = conn.prepareStatement(UPDATE_MOVIE)) {
+            conn.createStatement().executeUpdate(FOREIGN_KEYS_ON);
             ps.setString(1, m.getTitle());
             ps.setInt(2, m.getLength());
             ps.setString(3, m.getRating());
@@ -267,6 +277,7 @@ public class CinemaDAOImp implements CinemaDAO {
     @Override
     public boolean addScreening(Screening s) {
         try (Connection conn = DriverManager.getConnection(CONN_STR); PreparedStatement ps = conn.prepareStatement(INSERT_SCREENING)) {
+            conn.createStatement().executeUpdate(FOREIGN_KEYS_ON);
             ps.setInt(1, s.getMovieId());
             ps.setString(2, s.getDate() + "T" + s.getTime() + "+00:00");
             ps.setInt(3, s.getRoom());
@@ -284,6 +295,7 @@ public class CinemaDAOImp implements CinemaDAO {
     public boolean deleteScreening(Screening s) {
         try (Connection conn = DriverManager.getConnection(CONN_STR);
              PreparedStatement ps = conn.prepareStatement(DELETE_SCREENING)) {
+            conn.createStatement().executeUpdate(FOREIGN_KEYS_ON);
             ps.setInt(1, s.getId());
             int res = ps.executeUpdate();
             if (res == 1) {
@@ -299,6 +311,7 @@ public class CinemaDAOImp implements CinemaDAO {
     @Override
     public boolean updateScreening(int id, Screening s) {
         try (Connection conn = DriverManager.getConnection(CONN_STR); PreparedStatement ps = conn.prepareStatement(UPDATE_SCREENING)) {
+            conn.createStatement().executeUpdate(FOREIGN_KEYS_ON);
             ps.setInt(1, s.getMovieId());
             ps.setString(2, s.getTime());
             ps.setInt(3,s.getRoom());
@@ -332,6 +345,7 @@ public class CinemaDAOImp implements CinemaDAO {
     public boolean deleteRoom(Room r) {
         try (Connection conn = DriverManager.getConnection(CONN_STR);
              PreparedStatement ps = conn.prepareStatement(DELETE_ROOM)) {
+            conn.createStatement().executeUpdate(FOREIGN_KEYS_ON);
             ps.setInt(1, r.getId());
             int res = ps.executeUpdate();
             if (res == 1) {
@@ -347,6 +361,7 @@ public class CinemaDAOImp implements CinemaDAO {
     @Override
     public boolean updateRoom(int id, Room r) {
         try (Connection conn = DriverManager.getConnection(CONN_STR); PreparedStatement ps = conn.prepareStatement(UPDATE_ROOM)) {
+            conn.createStatement().executeUpdate(FOREIGN_KEYS_ON);
             ps.setInt(1, r.getRows());
             ps.setInt(2, r.getColumns());
             ps.setInt(3,id);
@@ -386,6 +401,7 @@ public class CinemaDAOImp implements CinemaDAO {
     @Override
     public boolean addReservation(Reservation r) {
         try (Connection conn = DriverManager.getConnection(CONN_STR); PreparedStatement ps = conn.prepareStatement(INSERT_RESERVATION)) {
+            conn.createStatement().executeUpdate(FOREIGN_KEYS_ON);
             ps.setInt(1, r.getScreeningId());
             ps.setString(2, r.getUsername());
             int res = ps.executeUpdate();
@@ -402,6 +418,7 @@ public class CinemaDAOImp implements CinemaDAO {
     public boolean deleteReservation(Reservation r) {
         try (Connection conn = DriverManager.getConnection(CONN_STR);
              PreparedStatement ps = conn.prepareStatement(DELETE_RESERVATION)) {
+            conn.createStatement().executeUpdate(FOREIGN_KEYS_ON);
             ps.setInt(1, r.getId());
             int res = ps.executeUpdate();
             if (res == 1) {
@@ -417,6 +434,7 @@ public class CinemaDAOImp implements CinemaDAO {
     @Override
     public boolean updateReservation(int id, Reservation r) {
         try (Connection conn = DriverManager.getConnection(CONN_STR); PreparedStatement ps = conn.prepareStatement(UPDATE_RESERVATION)) {
+            conn.createStatement().executeUpdate(FOREIGN_KEYS_ON);
             ps.setInt(1, r.getScreeningId());
             ps.setString(2, r.getUsername());
             int res = ps.executeUpdate();
@@ -427,6 +445,21 @@ public class CinemaDAOImp implements CinemaDAO {
             e.printStackTrace();
         }
         return false;
+    }
+
+    @Override
+    public Integer getLastReservationId() {
+        try (Connection conn = DriverManager.getConnection(CONN_STR);
+             Statement st = conn.createStatement();
+             ResultSet rs = st.executeQuery(LAST_RESERVATION_ID)
+        ) {
+            return rs.getInt(1);
+
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
+        return null;
     }
 
     @Override
@@ -519,6 +552,31 @@ public class CinemaDAOImp implements CinemaDAO {
     }
 
     @Override
+    public List<User> listAllUsers() {
+        //TODO: body
+        return null;
+    }
+
+    @Override
+    public List<String> listAllUsernames() {
+        List<String> res = new ArrayList<>();
+        try (Connection conn = DriverManager.getConnection(CONN_STR);
+             Statement st = conn.createStatement();
+             ResultSet rs = st.executeQuery(SELECT_ALL_USERNAMES)
+        ) {
+            while (rs.next()) {
+                res.add(rs.getString(1));
+            }
+
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
+        return res;
+    }
+
+
+    @Override
     public List<String> listActorNamesOfMovie(Integer movieId){
         List<String> res = new ArrayList<>();
         try (Connection conn = DriverManager.getConnection(CONN_STR);
@@ -551,6 +609,12 @@ public class CinemaDAOImp implements CinemaDAO {
         }
         return res;
     }
+
+    @Override
+    public String getMovieTitleByScreeningId(Integer screeningId) {
+        return null;
+    }
+
 
     @Override
     public String getScreeningDateTimeByReservationId(Integer reservationId) {
@@ -659,5 +723,37 @@ public class CinemaDAOImp implements CinemaDAO {
             e.printStackTrace();
         }
         return res;
+    }
+
+    @Override
+    public boolean addSeat(Seat s) {
+        try (Connection conn = DriverManager.getConnection(CONN_STR); PreparedStatement ps = conn.prepareStatement(INSERT_SEAT)) {
+            ps.setInt(1, s.getResId());
+            ps.setInt(2, s.getNumber());
+            int res = ps.executeUpdate();
+            if (res == 1) {
+                return true;
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return false;
+    }
+
+    @Override
+    public boolean deleteSeat(Seat s) {
+        try (Connection conn = DriverManager.getConnection(CONN_STR);
+             PreparedStatement ps = conn.prepareStatement(DELETE_SEAT)) {
+            ps.setInt(1, s.getResId());
+            ps.setInt(2,s.getNumber());
+            int res = ps.executeUpdate();
+            if (res == 1) {
+                return true;
+            }
+
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return false;
     }
 }

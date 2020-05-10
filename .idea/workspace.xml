@@ -6,7 +6,55 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="14939d9e-b849-4776-b297-bf63e2da7114" name="Default Changelist" comment="" />
+    <list default="true" id="14939d9e-b849-4776-b297-bf63e2da7114" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cinema-core/src/main/java/hu/alkfejl/model/ScreeningWrap.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cinema-desk/src/main/java/hu/alkfejl/view/controller/ScreeningAddController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cinema-desk/src/main/java/hu/alkfejl/view/controller/ScreeningListController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cinema-desk/src/main/resources/hu/alkfejl/screeningAdd.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cinema-desk/src/main/resources/hu/alkfejl/screeningTable.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/93538cc2-a5c2-44a8-8c47-3b6cab60ca0b.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/a4d89b20-6e5e-447f-951c-e628c8946ad5.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/a4d89b20-6e5e-447f-951c-e628c8946ad5.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/c15f2514-894f-4d57-86d2-8c748674c76a.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cinema-core/src/main/java/hu/alkfejl/dao/CinemaDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/cinema-core/src/main/java/hu/alkfejl/dao/CinemaDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cinema-core/src/main/java/hu/alkfejl/dao/CinemaDAOImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/cinema-core/src/main/java/hu/alkfejl/dao/CinemaDAOImp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cinema-core/src/main/java/hu/alkfejl/model/Reservation.java" beforeDir="false" afterPath="$PROJECT_DIR$/cinema-core/src/main/java/hu/alkfejl/model/Reservation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cinema-core/src/main/java/hu/alkfejl/model/Room.java" beforeDir="false" afterPath="$PROJECT_DIR$/cinema-core/src/main/java/hu/alkfejl/model/Room.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cinema-core/src/main/java/hu/alkfejl/model/Screening.java" beforeDir="false" afterPath="$PROJECT_DIR$/cinema-core/src/main/java/hu/alkfejl/model/Screening.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cinema-core/src/main/java/hu/alkfejl/model/Wrap.java" beforeDir="false" afterPath="$PROJECT_DIR$/cinema-core/src/main/java/hu/alkfejl/model/Wrap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cinema-core/target/cinema-core-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/cinema-core/target/cinema-core-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cinema-core/target/classes/hu/alkfejl/dao/CinemaDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/cinema-core/target/classes/hu/alkfejl/dao/CinemaDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cinema-core/target/classes/hu/alkfejl/dao/CinemaDAOImp.class" beforeDir="false" afterPath="$PROJECT_DIR$/cinema-core/target/classes/hu/alkfejl/dao/CinemaDAOImp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cinema-core/target/classes/hu/alkfejl/model/Reservation.class" beforeDir="false" afterPath="$PROJECT_DIR$/cinema-core/target/classes/hu/alkfejl/model/Reservation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cinema-core/target/classes/hu/alkfejl/model/Screening.class" beforeDir="false" afterPath="$PROJECT_DIR$/cinema-core/target/classes/hu/alkfejl/model/Screening.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cinema-core/target/classes/hu/alkfejl/model/Wrap.class" beforeDir="false" afterPath="$PROJECT_DIR$/cinema-core/target/classes/hu/alkfejl/model/Wrap.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cinema-desk/cinema.db" beforeDir="false" afterPath="$PROJECT_DIR$/cinema-desk/cinema.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cinema-desk/img.png" beforeDir="false" afterPath="$PROJECT_DIR$/cinema-desk/img.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cinema-desk/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cinema-desk/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cinema-desk/src/main/java/hu/alkfejl/controller/CinemaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/cinema-desk/src/main/java/hu/alkfejl/controller/CinemaController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cinema-desk/src/main/java/hu/alkfejl/view/controller/MovieAddController.java" beforeDir="false" afterPath="$PROJECT_DIR$/cinema-desk/src/main/java/hu/alkfejl/view/controller/MovieAddController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cinema-desk/src/main/java/hu/alkfejl/view/controller/PrimaryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/cinema-desk/src/main/java/hu/alkfejl/view/controller/PrimaryController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cinema-desk/src/main/java/hu/alkfejl/view/controller/ReservationAddController.java" beforeDir="false" afterPath="$PROJECT_DIR$/cinema-desk/src/main/java/hu/alkfejl/view/controller/ReservationAddController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cinema-desk/src/main/java/hu/alkfejl/view/controller/ReservationListController.java" beforeDir="false" afterPath="$PROJECT_DIR$/cinema-desk/src/main/java/hu/alkfejl/view/controller/ReservationListController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cinema-desk/src/main/resources/hu/alkfejl/primary.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/cinema-desk/src/main/resources/hu/alkfejl/primary.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cinema-desk/src/main/resources/hu/alkfejl/reservationAdd.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/cinema-desk/src/main/resources/hu/alkfejl/reservationAdd.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cinema-desk/target/cinema-desk-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/cinema-desk/target/cinema-desk-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cinema-desk/target/classes/hu/alkfejl/controller/CinemaController.class" beforeDir="false" afterPath="$PROJECT_DIR$/cinema-desk/target/classes/hu/alkfejl/controller/CinemaController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cinema-desk/target/classes/hu/alkfejl/reservationAdd.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/cinema-desk/target/classes/hu/alkfejl/reservationAdd.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cinema-desk/target/classes/hu/alkfejl/view/controller/MovieAddController.class" beforeDir="false" afterPath="$PROJECT_DIR$/cinema-desk/target/classes/hu/alkfejl/view/controller/MovieAddController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cinema-desk/target/classes/hu/alkfejl/view/controller/PrimaryController.class" beforeDir="false" afterPath="$PROJECT_DIR$/cinema-desk/target/classes/hu/alkfejl/view/controller/PrimaryController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cinema-desk/target/classes/hu/alkfejl/view/controller/ReservationAddController.class" beforeDir="false" afterPath="$PROJECT_DIR$/cinema-desk/target/classes/hu/alkfejl/view/controller/ReservationAddController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cinema-desk/target/classes/hu/alkfejl/view/controller/ReservationListController$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/cinema-desk/target/classes/hu/alkfejl/view/controller/ReservationListController$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cinema-desk/target/classes/hu/alkfejl/view/controller/ReservationListController.class" beforeDir="false" afterPath="$PROJECT_DIR$/cinema-desk/target/classes/hu/alkfejl/view/controller/ReservationListController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cinema-desk/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/cinema-desk/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cinema-web/target/cinema-web.war" beforeDir="false" afterPath="$PROJECT_DIR$/cinema-web/target/cinema-web.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cinema-web/target/cinema-web/WEB-INF/lib/cinema-core-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/cinema-web/target/cinema-web/WEB-INF/lib/cinema-core-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -44,42 +92,7 @@
         <item name="cinema" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="main: schema" type="981a47c2:SqliteImplModel$Schema" />
-        <item name="Movie: table" type="3d80ac25:SqliteImplModel$Table" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="cinema" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="main: schema" type="981a47c2:SqliteImplModel$Schema" />
-        <item name="Reservation: table" type="3d80ac25:SqliteImplModel$Table" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="cinema" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="main: schema" type="981a47c2:SqliteImplModel$Schema" />
-        <item name="Room: table" type="3d80ac25:SqliteImplModel$Table" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="cinema" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="main: schema" type="981a47c2:SqliteImplModel$Schema" />
         <item name="Screening: table" type="3d80ac25:SqliteImplModel$Table" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="cinema" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="main: schema" type="981a47c2:SqliteImplModel$Schema" />
-        <item name="Seat: table" type="3d80ac25:SqliteImplModel$Table" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="cinema" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="main: schema" type="981a47c2:SqliteImplModel$Schema" />
-        <item name="User: table" type="3d80ac25:SqliteImplModel$Table" />
       </path>
     </expand>
     <select />
@@ -93,6 +106,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
     <option name="FILTER_WARNINGS" value="false" />
@@ -104,6 +120,7 @@
     <option name="importingSettings">
       <MavenImportingSettings>
         <option name="importAutomatically" value="true" />
+        <option name="vmOptionsForImporter" value="-Xmx768m" />
       </MavenImportingSettings>
     </option>
   </component>
@@ -111,22 +128,27 @@
     <option name="skipTests" value="true" />
   </component>
   <component name="ProjectId" id="1aqZwS8XAz9x11xweaLDoSSpg4A" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DatabaseDriversLRU" value="mysql&#10;sqlite" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../alkfejl/06/orai/MVC_advanced" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.externalResources" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.importing" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -138,7 +160,6 @@
     <option name="myCommands">
       <command value="mvn compile javafx:run" />
       <command value="javac" />
-      <command value="java --version" />
       <command value="mvn --version" />
       <command value="maven --version" />
       <command value="javac --version" />
@@ -148,7 +169,9 @@
       <command value="mvn dependency:tree" />
       <command value="mvn package" />
       <command value="mvn compile" />
+      <command value="java --version" />
       <command value="mvn clean" />
+      <command value="mvn clean install javafx:compile javafx:run" />
       <command value="mvn clean install" />
     </option>
   </component>
@@ -310,7 +333,7 @@
               <path>
                 <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
                 <item name="cinema: root" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-                <item name="com.intellij.database.console.session.MessageBusSession@4950a93e" type="9fbbdea:ServiceModel$ServiceNode" />
+                <item name="com.intellij.database.console.session.MessageBusSession@4b4e0ff" type="9fbbdea:ServiceModel$ServiceNode" />
               </path>
             </expand>
             <select />
@@ -347,17 +370,22 @@
       <workItem from="1588932478203" duration="26129000" />
       <workItem from="1588962037091" duration="2221000" />
       <workItem from="1589020471798" duration="30977000" />
+      <workItem from="1589098892501" duration="19506000" />
+      <workItem from="1589120170220" duration="19463000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
   <component name="WindowStateProjectService">
-    <state x="552" y="178" key="#Project_Structure" timestamp="1587649925599">
+    <state x="552" y="178" key="#Project_Structure" timestamp="1589138603851">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="178" key="#Project_Structure/0.0.1920.1040/-1680.22.1680.1010@0.0.1920.1040" timestamp="1587649925599" />
+    <state x="552" y="178" key="#Project_Structure/0.0.1920.1040/-1680.22.1680.1010@0.0.1920.1040" timestamp="1589138603851" />
     <state x="552" y="178" key="#SQL_Dialects" timestamp="1587485853046">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -366,19 +394,23 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="178" key="#Tomcat_Server/0.0.1920.1040/-1680.22.1680.1010@0.0.1920.1040" timestamp="1587471585937" />
-    <state x="379" y="60" width="1092" height="904" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1588947508598">
+    <state x="354" y="116" width="1092" height="904" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1589138641275">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="-1362" y="114" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/-1680.22.1680.1010@-1680.22.1680.1010" timestamp="1588074671163" />
-    <state x="379" y="60" width="1092" height="904" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/-1680.22.1680.1010@0.0.1920.1040" timestamp="1588947508598" />
-    <state x="765" y="204" key="#com.intellij.ide.util.MemberChooser" timestamp="1589052483811">
+    <state x="354" y="116" width="1092" height="904" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/-1680.22.1680.1010@0.0.1920.1040" timestamp="1589138641275" />
+    <state x="765" y="204" key="#com.intellij.ide.util.MemberChooser" timestamp="1589145122567">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="765" y="204" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/-1680.22.1680.1010@0.0.1920.1040" timestamp="1589052483811" />
+    <state x="765" y="204" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/-1680.22.1680.1010@0.0.1920.1040" timestamp="1589145122567" />
     <state x="808" y="409" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1587649412650">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="808" y="409" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1920.1040/-1680.22.1680.1010@0.0.1920.1040" timestamp="1587649412650" />
+    <state x="517" y="170" key="#com.intellij.j2ee.appServerIntegrations.ApplicationServersConfigurable" timestamp="1589108973880">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="517" y="170" key="#com.intellij.j2ee.appServerIntegrations.ApplicationServersConfigurable/0.0.1920.1040/-1680.22.1680.1010@0.0.1920.1040" timestamp="1589108973880" />
     <state x="756" y="379" width="408" height="288" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1587646957393">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -395,59 +427,59 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="267" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog/0.0.1920.1040/-1680.22.1680.1010@0.0.1920.1040" timestamp="1588943383995" />
-    <state x="740" y="261" key="FileChooserDialogImpl" timestamp="1589030378405">
+    <state x="439" y="409" key="FileChooserDialogImpl" timestamp="1589124610990">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="-1032" y="275" key="FileChooserDialogImpl/0.0.1920.1040/-1680.22.1680.1010@-1680.22.1680.1010" timestamp="1588249520768" />
-    <state x="740" y="261" key="FileChooserDialogImpl/0.0.1920.1040/-1680.22.1680.1010@0.0.1920.1040" timestamp="1589030378405" />
-    <state width="1877" height="183" key="GridCell.Tab.0.bottom" timestamp="1589053138918">
+    <state x="439" y="409" key="FileChooserDialogImpl/0.0.1920.1040/-1680.22.1680.1010@0.0.1920.1040" timestamp="1589124610990" />
+    <state width="1877" height="183" key="GridCell.Tab.0.bottom" timestamp="1589135209546">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="183" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1680.22.1680.1010@0.0.1920.1040" timestamp="1589053138918" />
-    <state width="1877" height="183" key="GridCell.Tab.0.center" timestamp="1589053138918">
+    <state width="1877" height="183" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1680.22.1680.1010@0.0.1920.1040" timestamp="1589135209546" />
+    <state width="1877" height="183" key="GridCell.Tab.0.center" timestamp="1589135209546">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="183" key="GridCell.Tab.0.center/0.0.1920.1040/-1680.22.1680.1010@0.0.1920.1040" timestamp="1589053138918" />
-    <state width="1877" height="183" key="GridCell.Tab.0.left" timestamp="1589053138918">
+    <state width="1877" height="183" key="GridCell.Tab.0.center/0.0.1920.1040/-1680.22.1680.1010@0.0.1920.1040" timestamp="1589135209546" />
+    <state width="1877" height="183" key="GridCell.Tab.0.left" timestamp="1589135209546">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="183" key="GridCell.Tab.0.left/0.0.1920.1040/-1680.22.1680.1010@0.0.1920.1040" timestamp="1589053138918" />
-    <state width="1877" height="183" key="GridCell.Tab.0.right" timestamp="1589053138918">
+    <state width="1877" height="183" key="GridCell.Tab.0.left/0.0.1920.1040/-1680.22.1680.1010@0.0.1920.1040" timestamp="1589135209546" />
+    <state width="1877" height="183" key="GridCell.Tab.0.right" timestamp="1589135209546">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="183" key="GridCell.Tab.0.right/0.0.1920.1040/-1680.22.1680.1010@0.0.1920.1040" timestamp="1589053138918" />
-    <state width="1293" height="216" key="GridCell.Tab.1.bottom" timestamp="1587489445686">
+    <state width="1877" height="183" key="GridCell.Tab.0.right/0.0.1920.1040/-1680.22.1680.1010@0.0.1920.1040" timestamp="1589135209546" />
+    <state width="1293" height="216" key="GridCell.Tab.1.bottom" timestamp="1589120138881">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1293" height="216" key="GridCell.Tab.1.bottom/0.0.1920.1040/-1680.22.1680.1010@0.0.1920.1040" timestamp="1587489445686" />
-    <state width="1293" height="216" key="GridCell.Tab.1.center" timestamp="1587489445686">
+    <state width="1293" height="216" key="GridCell.Tab.1.bottom/0.0.1920.1040/-1680.22.1680.1010@0.0.1920.1040" timestamp="1589120138881" />
+    <state width="1293" height="216" key="GridCell.Tab.1.center" timestamp="1589120138881">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1293" height="216" key="GridCell.Tab.1.center/0.0.1920.1040/-1680.22.1680.1010@0.0.1920.1040" timestamp="1587489445686" />
-    <state width="1293" height="216" key="GridCell.Tab.1.left" timestamp="1587489445685">
+    <state width="1293" height="216" key="GridCell.Tab.1.center/0.0.1920.1040/-1680.22.1680.1010@0.0.1920.1040" timestamp="1589120138881" />
+    <state width="1293" height="216" key="GridCell.Tab.1.left" timestamp="1589120138881">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1293" height="216" key="GridCell.Tab.1.left/0.0.1920.1040/-1680.22.1680.1010@0.0.1920.1040" timestamp="1587489445685" />
-    <state width="1293" height="216" key="GridCell.Tab.1.right" timestamp="1587489445686">
+    <state width="1293" height="216" key="GridCell.Tab.1.left/0.0.1920.1040/-1680.22.1680.1010@0.0.1920.1040" timestamp="1589120138881" />
+    <state width="1293" height="216" key="GridCell.Tab.1.right" timestamp="1589120138881">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1293" height="216" key="GridCell.Tab.1.right/0.0.1920.1040/-1680.22.1680.1010@0.0.1920.1040" timestamp="1587489445686" />
-    <state width="1293" height="216" key="GridCell.Tab.2.bottom" timestamp="1587489445686">
+    <state width="1293" height="216" key="GridCell.Tab.1.right/0.0.1920.1040/-1680.22.1680.1010@0.0.1920.1040" timestamp="1589120138881" />
+    <state width="1293" height="216" key="GridCell.Tab.2.bottom" timestamp="1589120138881">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1293" height="216" key="GridCell.Tab.2.bottom/0.0.1920.1040/-1680.22.1680.1010@0.0.1920.1040" timestamp="1587489445686" />
-    <state width="1293" height="216" key="GridCell.Tab.2.center" timestamp="1587489445686">
+    <state width="1293" height="216" key="GridCell.Tab.2.bottom/0.0.1920.1040/-1680.22.1680.1010@0.0.1920.1040" timestamp="1589120138881" />
+    <state width="1293" height="216" key="GridCell.Tab.2.center" timestamp="1589120138881">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1293" height="216" key="GridCell.Tab.2.center/0.0.1920.1040/-1680.22.1680.1010@0.0.1920.1040" timestamp="1587489445686" />
-    <state width="1293" height="216" key="GridCell.Tab.2.left" timestamp="1587489445686">
+    <state width="1293" height="216" key="GridCell.Tab.2.center/0.0.1920.1040/-1680.22.1680.1010@0.0.1920.1040" timestamp="1589120138881" />
+    <state width="1293" height="216" key="GridCell.Tab.2.left" timestamp="1589120138881">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1293" height="216" key="GridCell.Tab.2.left/0.0.1920.1040/-1680.22.1680.1010@0.0.1920.1040" timestamp="1587489445686" />
-    <state width="1293" height="216" key="GridCell.Tab.2.right" timestamp="1587489445686">
+    <state width="1293" height="216" key="GridCell.Tab.2.left/0.0.1920.1040/-1680.22.1680.1010@0.0.1920.1040" timestamp="1589120138881" />
+    <state width="1293" height="216" key="GridCell.Tab.2.right" timestamp="1589120138881">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1293" height="216" key="GridCell.Tab.2.right/0.0.1920.1040/-1680.22.1680.1010@0.0.1920.1040" timestamp="1587489445686" />
+    <state width="1293" height="216" key="GridCell.Tab.2.right/0.0.1920.1040/-1680.22.1680.1010@0.0.1920.1040" timestamp="1589120138881" />
     <state width="196" height="457" key="HiddenNamespacesPopup" timestamp="1588954699183">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -456,16 +488,24 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="490" y="175" key="Maven.ArtifactSearchDialog/0.0.1920.1040/-1680.22.1680.1010@0.0.1920.1040" timestamp="1589045878396" />
-    <state x="-1557" y="124" key="SettingsEditor" timestamp="1587995487901">
-      <screen x="-1680" y="22" width="1680" height="1010" />
+    <state x="440" y="94" key="SettingsEditor" timestamp="1589138808316">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="-1557" y="124" key="SettingsEditor/0.0.1920.1040/-1680.22.1680.1010@-1680.22.1680.1010" timestamp="1587995487901" />
-    <state x="440" y="94" key="SettingsEditor/0.0.1920.1040/-1680.22.1680.1010@0.0.1920.1040" timestamp="1587658321362" />
-    <state x="-1106" y="356" key="com.intellij.ide.util.TipDialog" timestamp="1588249465799">
-      <screen x="-1680" y="22" width="1680" height="1010" />
+    <state x="440" y="94" key="SettingsEditor/0.0.1920.1040/-1680.22.1680.1010@0.0.1920.1040" timestamp="1589138808316" />
+    <state x="681" y="261" width="570" height="524" key="StructurePopup" timestamp="1589145089859">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="681" y="261" width="570" height="524" key="StructurePopup/0.0.1920.1040/-1680.22.1680.1010@0.0.1920.1040" timestamp="1589145089859" />
+    <state x="748" y="190" width="568" height="532" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1589117228264">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="748" y="190" width="568" height="532" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.0.1920.1040/-1680.22.1680.1010@0.0.1920.1040" timestamp="1589117228264" />
+    <state x="656" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1589120171093">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="-1106" y="356" key="com.intellij.ide.util.TipDialog/0.0.1920.1040/-1680.22.1680.1010@-1680.22.1680.1010" timestamp="1588249465799" />
-    <state x="656" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040/-1680.22.1680.1010@0.0.1920.1040" timestamp="1587908217159" />
+    <state x="656" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040/-1680.22.1680.1010@0.0.1920.1040" timestamp="1589120171093" />
     <state x="-828" y="543" key="extract.method.dialog" timestamp="1587812196157">
       <screen x="-1680" y="22" width="1680" height="1010" />
     </state>
@@ -478,10 +518,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="702" y="140" key="refactoring.ChangeSignatureDialog/0.0.1920.1040/-1680.22.1680.1010@0.0.1920.1040" timestamp="1588955572888" />
-    <state x="616" y="240" width="672" height="677" key="run.anything.popup" timestamp="1589052855048">
+    <state x="616" y="240" width="672" height="677" key="run.anything.popup" timestamp="1589133604352">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="616" y="240" width="672" height="677" key="run.anything.popup/0.0.1920.1040/-1680.22.1680.1010@0.0.1920.1040" timestamp="1589052855048" />
+    <state x="616" y="240" width="672" height="677" key="run.anything.popup/0.0.1920.1040/-1680.22.1680.1010@0.0.1920.1040" timestamp="1589133604352" />
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1589027189209">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

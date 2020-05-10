@@ -8,7 +8,6 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-
 <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="620.0" prefWidth="597.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hu.alkfejl.view.controller.ReservationAddController">
    <children>
       <ChoiceBox fx:id="movieBox" layoutX="195.0" layoutY="128.0" prefHeight="23.0" prefWidth="311.0" />
@@ -41,7 +40,7 @@
       <ListView fx:id="availableView" layoutX="406.0" layoutY="387.0" prefHeight="135.0" prefWidth="88.0" />
       <Button layoutX="60.0" layoutY="548.0" mnemonicParsing="false" onAction="#submit" prefHeight="46.0" prefWidth="194.0" text="Submit" />
       <Button layoutX="341.0" layoutY="548.0" mnemonicParsing="false" onAction="#cancel" prefHeight="46.0" prefWidth="194.0" text="Cancel" />
-      <TextField fx:id="seatsField" layoutX="195.0" layoutY="328.0" prefHeight="37.0" prefWidth="311.0">
+      <TextField fx:id="seatsField" layoutX="195.0" layoutY="328.0" prefHeight="37.0" prefWidth="311.0" promptText="Separated by &quot;,&quot; characters">
          <font>
             <Font size="16.0" />
          </font>

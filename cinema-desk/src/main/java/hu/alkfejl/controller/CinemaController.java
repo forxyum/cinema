@@ -71,6 +71,27 @@ public class CinemaController {
     public List<Reservation> listAllReservations() {
         return dao.listAllReservations();
     }
+    public List<String> listAllUsernames(){
+        return dao.listAllUsernames();
+    }
+    public boolean addReservation(Reservation r){
+        return dao.addReservation(r);
+    }
+    public boolean removeReservation(Reservation r){
+        return dao.deleteReservation(r);
+    }
+    public boolean updateReservation(Integer id,Reservation r){
+        return dao.updateReservation(id,r);
+    }
+    public Integer lastReservationId(){
+        return dao.getLastReservationId();
+    }
+    public boolean addSeat(Seat s){
+        return dao.addSeat(s);
+    }
+    public boolean removeSeat(Seat s){
+        return dao.deleteSeat(s);
+    }
     public String movieTitleByReservationId(Integer resId){
         return dao.getMovieTitleByReservationId(resId);
     }

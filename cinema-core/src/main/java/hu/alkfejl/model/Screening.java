@@ -82,4 +82,15 @@ public class Screening {
     public void setRoom(int room) {
         this.room.set(room);
     }
+
+    @Override
+    public String toString() {
+        return "Screening{" +
+                "id=" + id +
+                ", movieId=" + movieId +
+                ", date=" + date +
+                ", time=" + time +
+                ", room=" + room +
+                '}';
+    }
 }

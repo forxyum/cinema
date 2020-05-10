@@ -36,7 +36,6 @@
       <NameSurrogate>1</NameSurrogate>
       <ColNames>movieId
 name</ColNames>
-      <ColumnCollations></ColumnCollations>
       <Unique>1</Unique>
     </index>
     <key id="18" parent="6">
@@ -182,7 +181,6 @@ name</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <ColNames>resId
 number</ColNames>
-      <ColumnCollations></ColumnCollations>
       <Unique>1</Unique>
     </index>
     <key id="47" parent="11">
@@ -210,7 +208,6 @@ number</ColNames>
     <index id="51" parent="12" name="sqlite_autoindex_User_1">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>username</ColNames>
-      <ColumnCollations></ColumnCollations>
       <Unique>1</Unique>
     </index>
     <key id="52" parent="12">

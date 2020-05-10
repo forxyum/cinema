@@ -54,4 +54,13 @@ public class Reservation {
     public void setUsername(String username) {
         this.username.set(username);
     }
+
+    @Override
+    public String toString() {
+        return "Reservation{" +
+                "id=" + id +
+                ", screeningId=" + screeningId +
+                ", username=" + username +
+                '}';
+    }
 }
