@@ -17,6 +17,7 @@ public interface CinemaDAO {
     boolean addScreening(Screening s);
     boolean deleteScreening(Screening s);
     boolean updateScreening(int id,Screening s);
+    List<Screening> listAllScreenings();
     //Room
     boolean addRoom(Room r);
     boolean deleteRoom(Room r);

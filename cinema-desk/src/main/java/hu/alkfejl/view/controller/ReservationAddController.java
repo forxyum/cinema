@@ -58,20 +58,25 @@ public class ReservationAddController implements Initializable {
     void submit() {
         if (usernameField.getText().isEmpty()) {
             Utils.showWarning("You must enter you username");
+            return;
         } else {
             List<String> usernames = CinemaController.getInstance().listAllUsernames();
             if (!usernames.contains(usernameField.getText())) {
                 Utils.showWarning("User does not exits");
+                return;
             }
         }
         if (movieBox.getValue() == null) {
             Utils.showWarning("Movie must be selected");
+            return;
         }
         if (screeningBox.getValue() == null) {
             Utils.showWarning("Screening must be selected");
+            return;
         }
         if (seatsField.getText().isEmpty()) {
             Utils.showWarning("You must add at least one seat");
+            return;
         } else {
             boolean right = true;
             List<String> wrongs = new ArrayList<>();

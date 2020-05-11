@@ -7,53 +7,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="14939d9e-b849-4776-b297-bf63e2da7114" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cinema-core/src/main/java/hu/alkfejl/model/ScreeningWrap.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cinema-desk/src/main/java/hu/alkfejl/view/controller/ScreeningAddController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cinema-desk/src/main/java/hu/alkfejl/view/controller/ScreeningListController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cinema-desk/src/main/resources/hu/alkfejl/screeningAdd.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cinema-desk/src/main/resources/hu/alkfejl/screeningTable.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/93538cc2-a5c2-44a8-8c47-3b6cab60ca0b.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/a4d89b20-6e5e-447f-951c-e628c8946ad5.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/a4d89b20-6e5e-447f-951c-e628c8946ad5.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/c15f2514-894f-4d57-86d2-8c748674c76a.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/a4d89b20-6e5e-447f-951c-e628c8946ad5.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cinema-core/src/main/java/hu/alkfejl/dao/CinemaDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/cinema-core/src/main/java/hu/alkfejl/dao/CinemaDAO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cinema-core/src/main/java/hu/alkfejl/dao/CinemaDAOImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/cinema-core/src/main/java/hu/alkfejl/dao/CinemaDAOImp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cinema-core/src/main/java/hu/alkfejl/model/Reservation.java" beforeDir="false" afterPath="$PROJECT_DIR$/cinema-core/src/main/java/hu/alkfejl/model/Reservation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cinema-core/src/main/java/hu/alkfejl/model/Room.java" beforeDir="false" afterPath="$PROJECT_DIR$/cinema-core/src/main/java/hu/alkfejl/model/Room.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cinema-core/src/main/java/hu/alkfejl/model/Screening.java" beforeDir="false" afterPath="$PROJECT_DIR$/cinema-core/src/main/java/hu/alkfejl/model/Screening.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cinema-core/src/main/java/hu/alkfejl/model/Wrap.java" beforeDir="false" afterPath="$PROJECT_DIR$/cinema-core/src/main/java/hu/alkfejl/model/Wrap.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cinema-core/target/cinema-core-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/cinema-core/target/cinema-core-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cinema-core/target/classes/hu/alkfejl/dao/CinemaDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/cinema-core/target/classes/hu/alkfejl/dao/CinemaDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cinema-core/target/classes/hu/alkfejl/dao/CinemaDAOImp.class" beforeDir="false" afterPath="$PROJECT_DIR$/cinema-core/target/classes/hu/alkfejl/dao/CinemaDAOImp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cinema-core/target/classes/hu/alkfejl/model/Reservation.class" beforeDir="false" afterPath="$PROJECT_DIR$/cinema-core/target/classes/hu/alkfejl/model/Reservation.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cinema-core/target/classes/hu/alkfejl/model/Screening.class" beforeDir="false" afterPath="$PROJECT_DIR$/cinema-core/target/classes/hu/alkfejl/model/Screening.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cinema-core/target/classes/hu/alkfejl/model/Wrap.class" beforeDir="false" afterPath="$PROJECT_DIR$/cinema-core/target/classes/hu/alkfejl/model/Wrap.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cinema-core/src/main/java/hu/alkfejl/model/ScreeningWrap.java" beforeDir="false" afterPath="$PROJECT_DIR$/cinema-core/src/main/java/hu/alkfejl/model/ScreeningWrap.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cinema-desk/cinema.db" beforeDir="false" afterPath="$PROJECT_DIR$/cinema-desk/cinema.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cinema-desk/img.png" beforeDir="false" afterPath="$PROJECT_DIR$/cinema-desk/img.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cinema-desk/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cinema-desk/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cinema-desk/src/main/java/hu/alkfejl/controller/CinemaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/cinema-desk/src/main/java/hu/alkfejl/controller/CinemaController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cinema-desk/src/main/java/hu/alkfejl/view/controller/MovieAddController.java" beforeDir="false" afterPath="$PROJECT_DIR$/cinema-desk/src/main/java/hu/alkfejl/view/controller/MovieAddController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cinema-desk/src/main/java/hu/alkfejl/view/controller/PrimaryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/cinema-desk/src/main/java/hu/alkfejl/view/controller/PrimaryController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cinema-desk/src/main/java/hu/alkfejl/view/controller/ReservationAddController.java" beforeDir="false" afterPath="$PROJECT_DIR$/cinema-desk/src/main/java/hu/alkfejl/view/controller/ReservationAddController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cinema-desk/src/main/java/hu/alkfejl/view/controller/ReservationListController.java" beforeDir="false" afterPath="$PROJECT_DIR$/cinema-desk/src/main/java/hu/alkfejl/view/controller/ReservationListController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cinema-desk/src/main/java/hu/alkfejl/view/controller/RoomAddController.java" beforeDir="false" afterPath="$PROJECT_DIR$/cinema-desk/src/main/java/hu/alkfejl/view/controller/RoomAddController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cinema-desk/src/main/java/hu/alkfejl/view/controller/ScreeningAddController.java" beforeDir="false" afterPath="$PROJECT_DIR$/cinema-desk/src/main/java/hu/alkfejl/view/controller/ScreeningAddController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cinema-desk/src/main/java/hu/alkfejl/view/controller/ScreeningListController.java" beforeDir="false" afterPath="$PROJECT_DIR$/cinema-desk/src/main/java/hu/alkfejl/view/controller/ScreeningListController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cinema-desk/src/main/resources/hu/alkfejl/movieTable.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/cinema-desk/src/main/resources/hu/alkfejl/movieTable.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cinema-desk/src/main/resources/hu/alkfejl/primary.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/cinema-desk/src/main/resources/hu/alkfejl/primary.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cinema-desk/src/main/resources/hu/alkfejl/reservationAdd.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/cinema-desk/src/main/resources/hu/alkfejl/reservationAdd.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cinema-desk/target/cinema-desk-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/cinema-desk/target/cinema-desk-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cinema-desk/target/classes/hu/alkfejl/controller/CinemaController.class" beforeDir="false" afterPath="$PROJECT_DIR$/cinema-desk/target/classes/hu/alkfejl/controller/CinemaController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cinema-desk/target/classes/hu/alkfejl/reservationAdd.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/cinema-desk/target/classes/hu/alkfejl/reservationAdd.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cinema-desk/target/classes/hu/alkfejl/view/controller/MovieAddController.class" beforeDir="false" afterPath="$PROJECT_DIR$/cinema-desk/target/classes/hu/alkfejl/view/controller/MovieAddController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cinema-desk/target/classes/hu/alkfejl/view/controller/PrimaryController.class" beforeDir="false" afterPath="$PROJECT_DIR$/cinema-desk/target/classes/hu/alkfejl/view/controller/PrimaryController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cinema-desk/target/classes/hu/alkfejl/view/controller/ReservationAddController.class" beforeDir="false" afterPath="$PROJECT_DIR$/cinema-desk/target/classes/hu/alkfejl/view/controller/ReservationAddController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cinema-desk/target/classes/hu/alkfejl/view/controller/ReservationListController$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/cinema-desk/target/classes/hu/alkfejl/view/controller/ReservationListController$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cinema-desk/target/classes/hu/alkfejl/view/controller/ReservationListController.class" beforeDir="false" afterPath="$PROJECT_DIR$/cinema-desk/target/classes/hu/alkfejl/view/controller/ReservationListController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cinema-desk/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/cinema-desk/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cinema-web/target/cinema-web.war" beforeDir="false" afterPath="$PROJECT_DIR$/cinema-web/target/cinema-web.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cinema-web/target/cinema-web/WEB-INF/lib/cinema-core-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/cinema-web/target/cinema-web/WEB-INF/lib/cinema-core-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cinema-desk/src/main/resources/hu/alkfejl/reservationTable.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/cinema-desk/src/main/resources/hu/alkfejl/reservationTable.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cinema-desk/src/main/resources/hu/alkfejl/roomTable.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/cinema-desk/src/main/resources/hu/alkfejl/roomTable.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cinema-desk/src/main/resources/hu/alkfejl/screeningAdd.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/cinema-desk/src/main/resources/hu/alkfejl/screeningAdd.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cinema-desk/src/main/resources/hu/alkfejl/screeningTable.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/cinema-desk/src/main/resources/hu/alkfejl/screeningTable.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -145,7 +117,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../alkfejl/06/orai/MVC_advanced" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.importing" />
@@ -164,14 +136,14 @@
       <command value="maven --version" />
       <command value="javac --version" />
       <command value="mvn compile 'org.jfxtras:jmetro:11.6.10'" />
-      <command value="mvn install" />
       <command value="mvn compile dependency:tree" />
       <command value="mvn dependency:tree" />
       <command value="mvn package" />
       <command value="mvn compile" />
       <command value="java --version" />
-      <command value="mvn clean" />
       <command value="mvn clean install javafx:compile javafx:run" />
+      <command value="mvn clean" />
+      <command value="mvn install" />
       <command value="mvn clean install" />
     </option>
   </component>
@@ -371,7 +343,8 @@
       <workItem from="1588962037091" duration="2221000" />
       <workItem from="1589020471798" duration="30977000" />
       <workItem from="1589098892501" duration="19506000" />
-      <workItem from="1589120170220" duration="19463000" />
+      <workItem from="1589120170220" duration="27715000" />
+      <workItem from="1589193545354" duration="13458000" />
     </task>
     <servers />
   </component>
@@ -382,10 +355,10 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="552" y="178" key="#Project_Structure" timestamp="1589138603851">
+    <state x="552" y="178" key="#Project_Structure" timestamp="1589146787951">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="178" key="#Project_Structure/0.0.1920.1040/-1680.22.1680.1010@0.0.1920.1040" timestamp="1589138603851" />
+    <state x="552" y="178" key="#Project_Structure/0.0.1920.1040/-1680.22.1680.1010@0.0.1920.1040" timestamp="1589146787951" />
     <state x="552" y="178" key="#SQL_Dialects" timestamp="1587485853046">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -399,10 +372,10 @@
     </state>
     <state x="-1362" y="114" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/-1680.22.1680.1010@-1680.22.1680.1010" timestamp="1588074671163" />
     <state x="354" y="116" width="1092" height="904" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/-1680.22.1680.1010@0.0.1920.1040" timestamp="1589138641275" />
-    <state x="765" y="204" key="#com.intellij.ide.util.MemberChooser" timestamp="1589145122567">
+    <state x="765" y="204" key="#com.intellij.ide.util.MemberChooser" timestamp="1589200067428">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="765" y="204" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/-1680.22.1680.1010@0.0.1920.1040" timestamp="1589145122567" />
+    <state x="765" y="204" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/-1680.22.1680.1010@0.0.1920.1040" timestamp="1589200067428" />
     <state x="808" y="409" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1587649412650">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -427,27 +400,27 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="267" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog/0.0.1920.1040/-1680.22.1680.1010@0.0.1920.1040" timestamp="1588943383995" />
-    <state x="439" y="409" key="FileChooserDialogImpl" timestamp="1589124610990">
+    <state x="439" y="409" key="FileChooserDialogImpl" timestamp="1589202343095">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="-1032" y="275" key="FileChooserDialogImpl/0.0.1920.1040/-1680.22.1680.1010@-1680.22.1680.1010" timestamp="1588249520768" />
-    <state x="439" y="409" key="FileChooserDialogImpl/0.0.1920.1040/-1680.22.1680.1010@0.0.1920.1040" timestamp="1589124610990" />
-    <state width="1877" height="183" key="GridCell.Tab.0.bottom" timestamp="1589145319035">
+    <state x="439" y="409" key="FileChooserDialogImpl/0.0.1920.1040/-1680.22.1680.1010@0.0.1920.1040" timestamp="1589202343095" />
+    <state width="1877" height="183" key="GridCell.Tab.0.bottom" timestamp="1589207902862">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="183" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1680.22.1680.1010@0.0.1920.1040" timestamp="1589145319035" />
-    <state width="1877" height="183" key="GridCell.Tab.0.center" timestamp="1589145319034">
+    <state width="1877" height="183" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1680.22.1680.1010@0.0.1920.1040" timestamp="1589207902862" />
+    <state width="1877" height="183" key="GridCell.Tab.0.center" timestamp="1589207902862">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="183" key="GridCell.Tab.0.center/0.0.1920.1040/-1680.22.1680.1010@0.0.1920.1040" timestamp="1589145319034" />
-    <state width="1877" height="183" key="GridCell.Tab.0.left" timestamp="1589145319034">
+    <state width="1877" height="183" key="GridCell.Tab.0.center/0.0.1920.1040/-1680.22.1680.1010@0.0.1920.1040" timestamp="1589207902862" />
+    <state width="1877" height="183" key="GridCell.Tab.0.left" timestamp="1589207902861">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="183" key="GridCell.Tab.0.left/0.0.1920.1040/-1680.22.1680.1010@0.0.1920.1040" timestamp="1589145319034" />
-    <state width="1877" height="183" key="GridCell.Tab.0.right" timestamp="1589145319034">
+    <state width="1877" height="183" key="GridCell.Tab.0.left/0.0.1920.1040/-1680.22.1680.1010@0.0.1920.1040" timestamp="1589207902861" />
+    <state width="1877" height="183" key="GridCell.Tab.0.right" timestamp="1589207902862">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="183" key="GridCell.Tab.0.right/0.0.1920.1040/-1680.22.1680.1010@0.0.1920.1040" timestamp="1589145319034" />
+    <state width="1877" height="183" key="GridCell.Tab.0.right/0.0.1920.1040/-1680.22.1680.1010@0.0.1920.1040" timestamp="1589207902862" />
     <state width="1293" height="216" key="GridCell.Tab.1.bottom" timestamp="1589120138881">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -488,40 +461,44 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="490" y="175" key="Maven.ArtifactSearchDialog/0.0.1920.1040/-1680.22.1680.1010@0.0.1920.1040" timestamp="1589045878396" />
-    <state x="440" y="94" key="SettingsEditor" timestamp="1589138808316">
+    <state x="440" y="94" key="SettingsEditor" timestamp="1589146621755">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="-1557" y="124" key="SettingsEditor/0.0.1920.1040/-1680.22.1680.1010@-1680.22.1680.1010" timestamp="1587995487901" />
-    <state x="440" y="94" key="SettingsEditor/0.0.1920.1040/-1680.22.1680.1010@0.0.1920.1040" timestamp="1589138808316" />
-    <state x="681" y="261" width="570" height="524" key="StructurePopup" timestamp="1589145089859">
+    <state x="440" y="94" key="SettingsEditor/0.0.1920.1040/-1680.22.1680.1010@0.0.1920.1040" timestamp="1589146621755" />
+    <state x="681" y="261" width="570" height="524" key="StructurePopup" timestamp="1589207483092">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="681" y="261" width="570" height="524" key="StructurePopup/0.0.1920.1040/-1680.22.1680.1010@0.0.1920.1040" timestamp="1589145089859" />
+    <state x="681" y="261" width="570" height="524" key="StructurePopup/0.0.1920.1040/-1680.22.1680.1010@0.0.1920.1040" timestamp="1589207483092" />
+    <state x="849" y="410" width="326" height="234" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1589198451997">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="849" y="410" width="326" height="234" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/0.0.1920.1040/-1680.22.1680.1010@0.0.1920.1040" timestamp="1589198451997" />
     <state x="748" y="190" width="568" height="532" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1589117228264">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="748" y="190" width="568" height="532" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.0.1920.1040/-1680.22.1680.1010@0.0.1920.1040" timestamp="1589117228264" />
-    <state x="656" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1589120171093">
+    <state x="656" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1589193601597">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="-1106" y="356" key="com.intellij.ide.util.TipDialog/0.0.1920.1040/-1680.22.1680.1010@-1680.22.1680.1010" timestamp="1588249465799" />
-    <state x="656" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040/-1680.22.1680.1010@0.0.1920.1040" timestamp="1589120171093" />
+    <state x="656" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040/-1680.22.1680.1010@0.0.1920.1040" timestamp="1589193601597" />
     <state x="-828" y="543" key="extract.method.dialog" timestamp="1587812196157">
       <screen x="-1680" y="22" width="1680" height="1010" />
     </state>
     <state x="-828" y="543" key="extract.method.dialog/0.0.1920.1040/-1680.22.1680.1010@-1680.22.1680.1010" timestamp="1587812196157" />
-    <state x="342" y="215" key="new project wizard" timestamp="1587561743406">
+    <state x="342" y="215" key="new project wizard" timestamp="1589146769015">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="342" y="215" key="new project wizard/0.0.1920.1040/-1680.22.1680.1010@0.0.1920.1040" timestamp="1587561743406" />
+    <state x="342" y="215" key="new project wizard/0.0.1920.1040/-1680.22.1680.1010@0.0.1920.1040" timestamp="1589146769015" />
     <state x="702" y="140" key="refactoring.ChangeSignatureDialog" timestamp="1588955572888">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="702" y="140" key="refactoring.ChangeSignatureDialog/0.0.1920.1040/-1680.22.1680.1010@0.0.1920.1040" timestamp="1588955572888" />
-    <state x="616" y="240" width="672" height="677" key="run.anything.popup" timestamp="1589145319058">
+    <state x="616" y="240" width="672" height="677" key="run.anything.popup" timestamp="1589207902885">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="616" y="240" width="672" height="677" key="run.anything.popup/0.0.1920.1040/-1680.22.1680.1010@0.0.1920.1040" timestamp="1589145319058" />
+    <state x="616" y="240" width="672" height="677" key="run.anything.popup/0.0.1920.1040/-1680.22.1680.1010@0.0.1920.1040" timestamp="1589207902885" />
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1589027189209">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

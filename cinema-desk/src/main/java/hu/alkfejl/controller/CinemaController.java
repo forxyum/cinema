@@ -71,46 +71,76 @@ public class CinemaController {
     public List<Reservation> listAllReservations() {
         return dao.listAllReservations();
     }
-    public List<String> listAllUsernames(){
+
+    public List<String> listAllUsernames() {
         return dao.listAllUsernames();
     }
-    public boolean addReservation(Reservation r){
+
+    public boolean addReservation(Reservation r) {
         return dao.addReservation(r);
     }
-    public boolean removeReservation(Reservation r){
+
+    public boolean removeReservation(Reservation r) {
         return dao.deleteReservation(r);
     }
-    public boolean updateReservation(Integer id,Reservation r){
-        return dao.updateReservation(id,r);
+
+    public boolean updateReservation(Integer id, Reservation r) {
+        return dao.updateReservation(id, r);
     }
-    public Integer lastReservationId(){
+
+    public Integer lastReservationId() {
         return dao.getLastReservationId();
     }
-    public boolean addSeat(Seat s){
+
+    public boolean addSeat(Seat s) {
         return dao.addSeat(s);
     }
-    public boolean removeSeat(Seat s){
+
+    public boolean removeSeat(Seat s) {
         return dao.deleteSeat(s);
     }
-    public String movieTitleByReservationId(Integer resId){
+    public List<Screening> listAllScreenings(){
+        return dao.listAllScreenings();
+    }
+    public boolean removeScreening(Screening s){
+        return dao.deleteScreening(s);
+    }
+    public boolean addScreening(Screening s){
+        return dao.addScreening(s);
+    }
+    public boolean updateScreening(Integer id,Screening s){
+        return dao.updateScreening(id,s);
+    }
+
+    public String movieTitleByReservationId(Integer resId) {
         return dao.getMovieTitleByReservationId(resId);
     }
-    public String screeningDateByReservationId(Integer resId){
+
+    public String movieTitleByScreeningId(Integer screeningId) {
+        return dao.getMovieTitleByScreeningId(screeningId);
+    }
+
+    public String screeningDateByReservationId(Integer resId) {
         return dao.getScreeningDateTimeByReservationId(resId);
     }
-    public List<Integer> seatsByReservationId(Integer resId){
+
+    public List<Integer> seatsByReservationId(Integer resId) {
         return dao.getSeatsByReservationId(resId);
     }
-    public Integer roomByReservationId(Integer resId){
+
+    public Integer roomByReservationId(Integer resId) {
         return dao.getRoomByReservationId(resId);
     }
-    public List<Screening> screeningsByMovieId(Integer movieId){
+
+    public List<Screening> screeningsByMovieId(Integer movieId) {
         return dao.getScreeningsByMovieId(movieId);
     }
-    public List<Integer> seatsByScreeningId(Integer screeningId){
+
+    public List<Integer> seatsByScreeningId(Integer screeningId) {
         return dao.getSeatsByScreeningId(screeningId);
     }
-    public List<Integer> roomDimensionsByScreeningId(Integer screeningId){
+
+    public List<Integer> roomDimensionsByScreeningId(Integer screeningId) {
         return dao.getRoomDimensionsByScreeningId(screeningId);
     }
 }

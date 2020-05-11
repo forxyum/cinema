@@ -103,16 +103,20 @@ public class MovieAddController implements Initializable {
     public void submit() {
         if (titleField.getText().isEmpty()) {
             Utils.showWarning("Title cannot be empty");
+            return;
         }
         if (lengthField.getText().isEmpty()) {
             Utils.showWarning("Length cannot be empty");
+            return;
         } else {
             if (!lengthField.getText().matches("[0-9]+")) {
                 Utils.showWarning("Length must only contain numbers");
+                return;
             }
         }
         if (directorField.getText().isEmpty()) {
             Utils.showWarning("Director cannot be empty");
+            return;
         }
         if(coverFile!=null) {
             this.coverString = new SimpleStringProperty(Utils.encodeBase64(coverFile));

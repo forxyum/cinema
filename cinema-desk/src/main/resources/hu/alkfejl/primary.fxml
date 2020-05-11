@@ -30,7 +30,7 @@
                   <MenuItem id="reservationListItem" mnemonicParsing="false" text="List" onAction="#displayReservations"/>
             </items>
           </Menu>
-            <Menu mnemonicParsing="false" text="Reservation">
+            <Menu mnemonicParsing="false" text="Screening">
                 <items>
                     <MenuItem id="screeningAddItem" mnemonicParsing="false" text="Add" onAction="#addScreening" />
                     <MenuItem id="screeningListItem" mnemonicParsing="false" text="List" onAction="#displayScreenings"/>

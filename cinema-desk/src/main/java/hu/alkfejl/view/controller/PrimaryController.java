@@ -74,11 +74,11 @@ public class PrimaryController implements Initializable {
     }
     @FXML
     public void addScreening(){
-        this.add("screaning","Add a new screaning");
+        this.add("screening","Add a new screening");
     }
     @FXML
     public void displayScreenings(){
-        this.display("screaning");
+        this.display("screening");
     }
 
 

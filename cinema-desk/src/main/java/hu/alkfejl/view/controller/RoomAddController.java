@@ -40,24 +40,30 @@ public class RoomAddController implements Initializable {
     void submit() {
         if (rowsField.getText().isEmpty()) {
             Utils.showWarning("Rows cannot be empty");
+            return;
         }
         else{
             if(Integer.parseInt(rowsField.getText())<=0){
                 Utils.showWarning("The number of rows must be larger than 0");
+                return;
             }
             else if(!rowsField.getText().matches("^[0-9]+$")){
                 Utils.showWarning("The number of rows must be a number (duh)");
+                return;
             }
         }
         if (columnsField.getText().isEmpty()) {
             Utils.showWarning("Columns cannot be empty");
+            return;
         }
         else{
             if(Integer.parseInt(columnsField.getText())<=0){
                 Utils.showWarning("The number of columns must be larger than 0");
+                return;
             }
             else if(!columnsField.getText().matches("^[0-9]+$")){
                 Utils.showWarning("The number of columns must be a number (duh)");
+                return;
             }
         }
         boolean res = false;
