@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="620.0" prefWidth="597.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hu.alkfejl.view.controller.ReservationAddController">
+   <children>
+      <ChoiceBox fx:id="movieBox" layoutX="195.0" layoutY="128.0" prefHeight="23.0" prefWidth="311.0" />
+      <Label layoutX="79.0" layoutY="66.0" prefHeight="25.0" prefWidth="78.0" text="Username">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="79.0" layoutY="128.0" prefHeight="25.0" prefWidth="48.0" text="Movie">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="usernameField" layoutX="195.0" layoutY="60.0" prefHeight="37.0" prefWidth="311.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </TextField>
+      <Label layoutX="79.0" layoutY="206.0" prefHeight="25.0" prefWidth="78.0" text="Screening">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <ChoiceBox fx:id="screeningBox" layoutX="195.0" layoutY="206.0" prefHeight="23.0" prefWidth="311.0" />
+      <Label layoutX="83.0" layoutY="334.0" prefHeight="25.0" prefWidth="40.0" text="Seats">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <ListView fx:id="availableView" layoutX="406.0" layoutY="387.0" prefHeight="135.0" prefWidth="88.0" />
+      <Button layoutX="60.0" layoutY="548.0" mnemonicParsing="false" onAction="#submit" prefHeight="46.0" prefWidth="194.0" text="Submit" />
+      <Button layoutX="341.0" layoutY="548.0" mnemonicParsing="false" onAction="#cancel" prefHeight="46.0" prefWidth="194.0" text="Cancel" />
+      <TextField fx:id="seatsField" layoutX="195.0" layoutY="328.0" prefHeight="37.0" prefWidth="311.0" promptText="Separated by &quot;,&quot; characters">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </TextField>
+      <Label layoutX="278.0" layoutY="446.0" prefHeight="25.0" prefWidth="107.0" text="Available seats">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>

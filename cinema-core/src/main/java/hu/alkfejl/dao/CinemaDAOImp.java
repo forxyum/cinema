@@ -1,5 +1,7 @@
 package hu.alkfejl.dao;
 
+import at.favre.lib.crypto.bcrypt.BCrypt;
+import hu.alkfejl.config.DBConfig;
 import hu.alkfejl.model.*;
 
 import java.sql.*;
@@ -8,7 +10,7 @@ import java.util.List;
 
 
 public class CinemaDAOImp implements CinemaDAO {
-    private static final String CONN_STR = "jdbc:sqlite:cinema.db";
+    private static final String CONN_STR = DBConfig.DB_CONN_STR;
     private static final String CREATE_MOVIE = "CREATE TABLE IF NOT EXISTS Movie(" +
             "id integer primary key autoincrement," +
             "title text," +
@@ -43,10 +45,7 @@ public class CinemaDAOImp implements CinemaDAO {
             "number integer not null," +
             "primary key(resId,number)," +
             "foreign key(resId) references Reservation(id) ON DELETE CASCADE ON UPDATE CASCADE);";
-    private static final String CREATE_USER = "CREATE TABLE IF NOT EXISTS User(" +
-            "username text primary key," +
-            "password text not null" +
-            ");";
+
     private static final String FOREIGN_KEYS_ON = "PRAGMA foreign_keys = ON;";
     private static final String INSERT_MOVIE = "INSERT INTO Movie VALUES(null,?,?,?,?,?,?);";
     private static final String DELETE_MOVIE = "DELETE FROM Movie where id = ?;";
@@ -76,10 +75,11 @@ public class CinemaDAOImp implements CinemaDAO {
     private static final String SCREENING_BY_MOVIE_ID = "SELECT * FROM Screening WHERE movieId=?;";
     private static final String SEATS_BY_SCREENING_ID = "SELECT number FROM Seat,Reservation,Screening WHERE screeningId=Screening.id AND Reservation.id=resId AND screeningId=?;";
     private static final String DIMENSIONS_BY_SCREENING_ID = "SELECT rows, columns FROM Room, Screening WHERE Screening.room=Room.id AND Screening.id =?;";
-    private static final String SELECT_ALL_USERNAMES = "SELECT username FROM User;";
     private static final String INSERT_SEAT = "INSERT INTO Seat VALUES(?,?);";
     private static final String DELETE_SEAT = "DELETE FROM Seat WHERE resId=? AND number=?;";
     private static final String MOVIE_TITLE_BY_SCREENING_ID = "SELECT title FROM Movie,Screening WHERE Movie.id = Screening.movieId AND Screening.id=?;";
+    private static final String RESERVATIONS_BY_USER  = "SELECT * FROM Reservation WHERE username=?;";
+    private static final String RES_BY_ID  = "SELECT * FROM Reservation WHERE id =?;";
 
     public CinemaDAOImp() {
         try {
@@ -99,7 +99,6 @@ public class CinemaDAOImp implements CinemaDAO {
             st.executeUpdate(CREATE_SCREENING);
             st.executeUpdate(CREATE_RESERVATION);
             st.executeUpdate(CREATE_SEAT);
-            st.executeUpdate(CREATE_USER);
         } catch (SQLException e) {
             e.printStackTrace();
         }
@@ -577,31 +576,6 @@ public class CinemaDAOImp implements CinemaDAO {
     }
 
     @Override
-    public List<User> listAllUsers() {
-        //TODO: body
-        return null;
-    }
-
-    @Override
-    public List<String> listAllUsernames() {
-        List<String> res = new ArrayList<>();
-        try (Connection conn = DriverManager.getConnection(CONN_STR);
-             Statement st = conn.createStatement();
-             ResultSet rs = st.executeQuery(SELECT_ALL_USERNAMES)
-        ) {
-            while (rs.next()) {
-                res.add(rs.getString(1));
-            }
-
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
-
-        return res;
-    }
-
-
-    @Override
     public List<String> listActorNamesOfMovie(Integer movieId){
         List<String> res = new ArrayList<>();
         try (Connection conn = DriverManager.getConnection(CONN_STR);
@@ -791,5 +765,42 @@ public class CinemaDAOImp implements CinemaDAO {
             e.printStackTrace();
         }
         return false;
+    }
+
+    @Override
+    public List<Reservation> getReservationsByUser(User u) {
+        List<Reservation> res = new ArrayList<>();
+        try (Connection conn = DriverManager.getConnection(CONN_STR); PreparedStatement ps = conn.prepareStatement(RESERVATIONS_BY_USER)) {
+            ps.setString(1,u.getUsername());
+            ResultSet rs = ps.executeQuery();
+            while(rs.next()){
+                res.add(new Reservation(
+                        rs.getInt(1),
+                        rs.getInt(2),
+                        rs.getString(3)
+                ));
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return res;
+    }
+    public Reservation getReservationById(Integer id){
+        Reservation res = null;
+        try (Connection conn = DriverManager.getConnection(CONN_STR);
+             PreparedStatement ps = conn.prepareStatement(RES_BY_ID);
+        ) {
+            ps.setInt(1,id);
+            try(ResultSet rs = ps.executeQuery()){
+                res = new Reservation(
+                        rs.getInt(1),
+                        rs.getInt(2),
+                        rs.getString(3)
+                );
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return res;
     }
 }

@@ -14,7 +14,7 @@
             <TableColumn fx:id="directorCol" prefWidth="${movieTable.width/8}" text="Director" />
             <TableColumn fx:id="descriptionCol" prefWidth="181.0" text="Description" />
             <TableColumn fx:id="idCol" visible="false" />
-            <TableColumn fx:id="actionsCol" prefWidth="94.0" minWidth="94.0" maxWidth="94.0" text="Actions" />
+            <TableColumn fx:id="actionsCol" prefWidth="94.0" minWidth="94.0"  text="Actions" />
          </columns>
          <columnResizePolicy>
             <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />

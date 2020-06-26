@@ -81,9 +81,11 @@ public class MovieAddController implements Initializable {
         FileChooser.ExtensionFilter filter = new FileChooser.ExtensionFilter("Images", "*.jpg", "*.png", "*.gif", "*.bmp");
         fileChooser.getExtensionFilters().add(filter);
         this.coverFile = fileChooser.showOpenDialog(fileUpload.getScene().getWindow());
-        this.coverImage = new Image(coverFile.toURI().toString());
-        coverView.setDisable(false);
-        coverView.setImage(coverImage);
+        if(coverFile != null) {
+            this.coverImage = new Image(coverFile.toURI().toString());
+            coverView.setDisable(false);
+            coverView.setImage(coverImage);
+        }
     }
     @FXML
     public void enlarge(){

@@ -11,7 +11,7 @@
                 <TableColumn fx:id="idCol" editable="false" prefWidth="113.0" text="Id" />
                 <TableColumn fx:id="rowsCol" prefWidth="276.0" text="Number of rows" />
                 <TableColumn fx:id="columnsCol" minWidth="0.0" prefWidth="210.0" text="Number of columns" />
-                <TableColumn fx:id="actionsCol" prefWidth="94.0" minWidth="94.0" maxWidth="94.0" text="Actions" />
+                <TableColumn fx:id="actionsCol" prefWidth="94.0" minWidth="94.0"  text="Actions" />
             </columns>
             <columnResizePolicy>
                 <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />

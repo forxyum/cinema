@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+
+<BorderPane id="windowPane" fx:id="mainPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="522.0" prefWidth="716.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hu.alkfejl.view.controller.PrimaryController">
+   <top>
+      <MenuBar BorderPane.alignment="CENTER">
+        <menus>
+          <Menu mnemonicParsing="false" text="Movie">
+            <items>
+              <MenuItem id="movieAddItem" fx:id="movieAddButton" mnemonicParsing="false" onAction="#addMovie" text="Add" />
+                  <MenuItem id="movieListItem" fx:id="movieListButton" mnemonicParsing="false" onAction="#displayMovies" text="List" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Room">
+            <items>
+              <MenuItem id="roomAddItem" mnemonicParsing="false" text="Add" onAction="#addRoom"/>
+                  <MenuItem id="roomListItem" mnemonicParsing="false" text="List" onAction="#displayRooms"/>
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Reservation">
+            <items>
+              <MenuItem id="reservationAddItem" mnemonicParsing="false" text="Add" onAction="#addReservation" />
+                  <MenuItem id="reservationListItem" mnemonicParsing="false" text="List" onAction="#displayReservations"/>
+            </items>
+          </Menu>
+            <Menu mnemonicParsing="false" text="Screening">
+                <items>
+                    <MenuItem id="screeningAddItem" mnemonicParsing="false" text="Add" onAction="#addScreening" />
+                    <MenuItem id="screeningListItem" mnemonicParsing="false" text="List" onAction="#displayScreenings"/>
+                </items>
+            </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+   <center>
+      <ScrollPane fitToHeight="true" fitToWidth="true" BorderPane.alignment="CENTER">
+        <content>
+          <AnchorPane fx:id="tableAnchor" minHeight="0.0" minWidth="0.0">
+               <children>
+                  <Pane prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+               </children>
+            </AnchorPane>
+        </content>
+      </ScrollPane>
+   </center>
+</BorderPane>

@@ -2,6 +2,8 @@ package hu.alkfejl.controller;
 
 import hu.alkfejl.dao.CinemaDAO;
 import hu.alkfejl.dao.CinemaDAOImp;
+import hu.alkfejl.dao.UserDAO;
+import hu.alkfejl.dao.UserDAOImp;
 import hu.alkfejl.model.*;
 
 import java.util.List;
@@ -9,6 +11,7 @@ import java.util.List;
 public class CinemaController {
     private static CinemaController single_instance = null;
     private CinemaDAO dao = new CinemaDAOImp();
+    private UserDAO userDAO = new UserDAOImp();
 
     public CinemaController() {
     }
@@ -19,6 +22,7 @@ public class CinemaController {
         }
         return single_instance;
     }
+
 
     public List<Movie> listAllMovies() {
         return dao.listAllMovies();
@@ -73,7 +77,7 @@ public class CinemaController {
     }
 
     public List<String> listAllUsernames() {
-        return dao.listAllUsernames();
+        return userDAO.listAllUsernames();
     }
 
     public boolean addReservation(Reservation r) {

@@ -32,8 +32,6 @@ public interface CinemaDAO {
     List<Reservation> advSearchReservations(String name, Integer screeningId);
     boolean addActor(Actor a);
     boolean deleteActor(Actor a);
-    List<User> listAllUsers();
-    List<String> listAllUsernames();
     List<String> listActorNamesOfMovie(Integer movieId);
     String getMovieTitleByReservationId(Integer reservationId);
     String getMovieTitleByScreeningId(Integer screeningId);
@@ -45,4 +43,6 @@ public interface CinemaDAO {
     List<Integer> getRoomDimensionsByScreeningId(Integer screeningId);
     boolean addSeat(Seat s);
     boolean deleteSeat(Seat s);
+    List<Reservation> getReservationsByUser(User u);
+    public Reservation getReservationById(Integer id);
 }
